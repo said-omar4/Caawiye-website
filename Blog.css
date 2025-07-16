@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+/* Head title */
+
+.head-title img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 20px;
+}
+
+.head-title p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+    color: #6A37E3;
+    margin-bottom: 10px;
+}
+
+.head-title h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px;
+    color: #1B0947;
+    line-height: 121%;
+}
+
+/* header section */
+header {
+    margin-top: 15px;
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+}
+
+header .header {
+    backdrop-filter: blur(5px);
+    width: 80%;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #EDE7FC;
+    border-radius: 100px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+header .header img {
+    width: 118px;
+    height: 24px;
+}
+
+header .header .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header .header .nav .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header .header .nav .nav-list .nav-link {
+    color: #5F537E;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 1s ease;
+    font-size: 17px;
+}
+
+header .header .nav .nav-list .nav-link:hover {
+    color: #6A37E3;
+    font-weight: bold;
+    border-bottom: 2px solid #6A37E3;
+}
+
+header .header .nav .nav-list .nav-link.active {
+    color: #6A37E3;
+    font-weight: bold;
+    border-bottom: 2px solid #6A37E3;
+}
+
+header .header .nav button {
+    width: 94px;
+    height: 34px;
+    background-color: white;
+    border: 1px solid #6A37E3;
+    font-size: 14px;
+    color: #6A37E3;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .header .nav button:hover {
+    background-color: #6A37E3;
+    color: white;
+}
+
+/* herro section css */
+
+.herro-section {
+    gap: 20px;
+    background-image: linear-gradient(to top, #BDA2FF, #FFFFFF);
+    height: auto;
+    width: 95%;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.herro-section h1 {
+    font-size: 55px;
+    font-weight: 700px;
+    color: #8856F8;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.herro-section span {
+    margin-top: 6px;
+    display: inline-block;
+    color: white;
+    background-image: linear-gradient(to bottom, #8F5BFC, #6F47EB);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: normal;
+}
+
+.herro-section p {
+    color: #8B59FA;
+    margin-top: 20px;
+}
+
+
+/* Latest and Top readed section */
+.readed-section {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 116px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* The latest blog part */
+
+.readed-section .left {
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+.readed-section .left h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 30px;
+    color: #1B0947;
+}
+
+.readed-section .left .Latest-blog {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.readed-section .left .Latest-blog img {
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+
+.readed-section .left .Latest-blog .content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.readed-section .left .Latest-blog .content h2 {
+    color: #1B0947;
+}
+
+.readed-section .left .Latest-blog .content p {
+    color: #766B91;
+}
+
+.readed-section .left .Latest-blog .content a {
+    color: #7FAC76;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.readed-section .left .Latest-blog .content .date-person .date {
+    color: #493A6C;
+}
+
+.readed-section .left .Latest-blog .content .date-person .person {
+    color: #6A37E3;
+}
+
+.readed-section .left .Latest-blog .content h2,
+p {
+    margin: 0;
+}
+
+.readed-section .left .Latest-blog .content .date-person {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.readed-section .left .Latest-blog .content .date-person .circle {
+    border-radius: 100px;
+    width: 6px;
+    height: 6px;
+    background-color: #6A37E3;
+}
+
+/* The Top Readed blogs  */
+
+.readed-section .left {
+    text-align: left;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.readed-section .right h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 30px;
+    color: #1B0947;
+    text-align: left;
+}
+
+.readed-section .right .Top-read {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.readed-section .right .Top-read .card {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 18px;
+    text-align: left;
+}
+
+.readed-section .right .Top-read .card img {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.readed-section .right .Top-read .card .card-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.readed-section .right .Top-read .card .card-content h3 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 124%;
+    color: #1B0947;
+}
+
+.readed-section .right .Top-read .card .card-content .date-person {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.readed-section .right .Top-read .card .card-content .date-person p {
+    color: #493A6C;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.readed-section .right .Top-read .card .card-content .date-person a {
+    color: #7FAC76;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.readed-section .right .Top-read .card .card-content .circle {
+    border-radius: 100px;
+    width: 6px;
+    height: 6px;
+    background-color: #7FAC76;
+}
+
+
+/* Blog section */
+
+.Blog {
+    width: 100%;
+    height: fit-content;
+    margin: 50px auto;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.Blog .blog-grid {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.Blog .blog-grid .card {
+    background-color: #ffffff;
+    width: 280px;
+    height: auto;
+    border: 1px solid #EEE6FF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Blog .blog-grid .card img {
+    width: 100%;
+    height: 140px;
+}
+
+.Blog .blog-grid .card .blog-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Blog .blog-grid .card .blog-date {
+    color: #766B91;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.Blog .blog-grid .card .blog-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 131.3%;
+    text-align: left;
+    color: #1d1d1f;
+    margin: 0px;
+    margin-bottom: 14px;
+}
+
+.Blog .blog-grid .card .blog-author {
+    font-size: 14px;
+    font-weight: normal;
+    color: #6A37E3;
+    margin: 0px;
+    text-align: left;
+}
+
+
+/* footer */
+
+/* subscribe to get blog posts news section */
+
+footer {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer .News-section {
+    margin: 0 auto;
+    background-image: linear-gradient(to top, rgba(189, 162, 255, 0.3), #ffffff);
+    width: 85%;
+    height: auto;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+footer .News-section .row1 img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 20px;
+}
+
+footer .News-section .row1 p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+    color: #6A37E3;
+    margin-bottom: 10px;
+}
+
+footer .News-section .row1 h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px;
+    color: #1B0947;
+    line-height: 121%;
+}
+
+footer .News-section .row2 {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 54px;
+    position: relative;
+}
+
+footer .News-section .row2 .line-card {
+    width: 1005px;
+    height: 260px;
+    border-radius: 0px 0px 20px 20px;
+    border-left: 2px solid #DED3F9;
+    border-right: 2px solid #DED3F9;
+    border-bottom: 2px solid #DED3F9;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+footer .News-section .row2 .email {
+    width: 320px;
+    height: 43px;
+    background-color: #FFFFFF;
+    border: 1px solid #C5B4F7;
+    border-radius: 100px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #C5B4F7;
+    z-index: 1;
+}
+
+footer .News-section .row2 .subscribe-btn {
+    width: 143px;
+    height: 45px;
+    background-color: #8F5BFC;
+    border: 1.5px solid #C5B4F7;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    z-index: 1;
+}
+
+/* Footer section button content */
+
+footer .bottom-footer {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer .bottom-footer .row3 {
+    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom-footer .row3 .line {
+    border-left: 2px solid #5F537E;
+    width: 5px;
+    height: 32px;
+}
+
+footer .bottom-footer .links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+footer .bottom-footer .row3 .links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #5F537E;
+}
+
+footer .bottom-footer hr {
+    background-color: #8F5BFC;
+    width: 100%;
+    border: none;
+    height: 1px;
+}
+
+footer .bottom-footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .bottom-footer .copyright p,
+h1 {
+    color: #1B0947;
+}
+
+footer .bottom-footer .copyright .social-links img {
+    width: 36px;
+    height: 36px;
+    margin-top: 14px;
+}
