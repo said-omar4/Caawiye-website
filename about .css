@@ -1,6 +1,4 @@
-
-
-body {
+wbody {
   background-color: white;
   text-align: center;
   height: 100%;
@@ -48,6 +46,13 @@ header .header {
   border-radius: 100px;
   align-content: center;
   margin: 0 auto;
+}
+
+header .header .nav .hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #6A37E3;
 }
 
 header .header img {
@@ -111,6 +116,8 @@ header .header .nav button:hover {
 /* herro section css */
 
 .herro-section {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   background-image: linear-gradient(to top, #BDA2FF, #FFFFFF);
   height: auto;
@@ -122,6 +129,7 @@ header .header .nav button:hover {
 }
 
 .herro-section h1 {
+  width: 600px;
   font-size: 55px;
   font-weight: 700px;
   color: #8856F8;
@@ -143,8 +151,11 @@ header .header .nav button:hover {
 }
 
 .herro-section p {
+  margin: 0 auto;
+  width: 600px;
   color: #8B59FA;
-  margin-top: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -159,11 +170,11 @@ header .header .nav button:hover {
   text-align: center;
 }
 
-.card {
+.About-section .card {
   display: flex;
   justify-content: space-around;
   width: 80%;
-  height: auto;
+  height: fit-content;
   padding: 40px;
   background-color: #F7F4FF51;
   border-radius: 20px;
@@ -171,13 +182,13 @@ header .header .nav button:hover {
   margin-top: 50px;
 }
 
-.card img {
+.About-section .card img {
   width: 450px;
   height: 400px;
   border-radius: 20px;
 }
 
-.card .contents h2 {
+.About-section .card .contents h2 {
   font-size: 48px;
   color: #6A37E3;
   font-weight: 700;
@@ -185,7 +196,8 @@ header .header .nav button:hover {
   margin: 0px;
 }
 
-.card .contents p {
+.About-section .card .contents p {
+  width: 500px;
   font-size: 18px;
   color: #1B0947;
   font-weight: normal;
@@ -193,12 +205,13 @@ header .header .nav button:hover {
   line-height: 150%;
 }
 
-.card .contents {
+.About-section .card .contents {
+  height: auto;
   text-align: left;
   align-content: center;
 }
 
-.card .contents button {
+.About-section .card .contents button {
   width: 140px;
   height: 50px;
   margin-top: 20px;
@@ -215,18 +228,18 @@ header .header .nav button:hover {
   height: auto;
   text-align: center;
   background-image: linear-gradient(to top, rgba(189, 162, 255, 0.3), #ffffff);
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 45px;
   width: 95%;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 85px auto;
   border-radius: 20px;
 }
 
+
 .Process-section .proces {
   display: flex;
-  width: 100%;
-  gap: 10px;
+  gap: 20px;
   text-align: center;
   justify-content: center;
   margin-top: 62px;
@@ -235,15 +248,14 @@ header .header .nav button:hover {
 
 .Process-section .proces .card {
   width: 300px;
-  height: auto;
+  height: 65px;
   background-color: #FFFFFF;
   border-radius: 18px;
   border: 1px solid #EDE7FC;
   box-shadow: 0px 4px 4px rgba(237, 231, 252, 0.6);
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 16px;
+  gap: 16px;
 }
 
 .Process-section .proces .card .Icons {
@@ -253,6 +265,7 @@ header .header .nav button:hover {
   background-color: #F3EFFD;
   text-align: center;
   align-content: center;
+  margin-left: 16px;
   align-items: center;
 }
 
@@ -262,7 +275,7 @@ header .header .nav button:hover {
 }
 
 .Process-section .proces .card .texts h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #1B0947;
   margin: 0px;
@@ -270,7 +283,7 @@ header .header .nav button:hover {
 }
 
 .Process-section .proces .card .texts p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #766B91;
   margin: 0px;
@@ -280,15 +293,21 @@ header .header .nav button:hover {
 
 .Process-section .proces .progress {
   background-color: #F0EBFC;
+}
+
+.Process-section .proces .card .progress {
+  background-color: #FFFFFF;
   box-shadow: none;
 }
 
 .Process-section .row-3 {
   display: flex;
-  gap: 50px;
-  width: fit-content;
+  justify-content: space-around;
+  /* gap: 50px; */
+  width: 90%;
   margin: 0 auto;
 }
+
 
 .Process-section .row-3 .colm1 h1 {
   text-align: left;
@@ -341,6 +360,7 @@ header .header .nav button:hover {
   height: 521px;
   border-radius: 20px;
 }
+
 
 
 /* stories section */
@@ -411,38 +431,21 @@ footer .News-section {
   padding-top: 60px;
 }
 
-footer .News-section .row1 img {
-  width: 65px;
-  height: 65px;
-  margin-bottom: 20px;
-}
-
-footer .News-section .row1 p {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0px;
-  color: #6A37E3;
-  margin-bottom: 10px;
-}
-
-footer .News-section .row1 h1 {
-  font-size: 38px;
-  font-weight: bold;
-  margin: 0px;
-  color: #1B0947;
-  line-height: 121%;
-}
-
 footer .News-section .row2 {
-  width: fit-content;
+  display: flex;
+  gap: 20px;
+  align-item: center;
+  justify-content: center;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
+  text-align: center;
   margin-top: 54px;
   position: relative;
+  /* background-color: #1B0947; */
 }
 
 footer .News-section .row2 .line-card {
-  width: 1005px;
+  width: 90%;
   height: 260px;
   border-radius: 0px 0px 20px 20px;
   border-left: 2px solid #DED3F9;
@@ -458,6 +461,7 @@ footer .News-section .row2 .line-card {
 footer .News-section .row2 .email {
   width: 320px;
   height: 43px;
+  margin: 0 auto;
   background-color: #FFFFFF;
   border: 1px solid #C5B4F7;
   border-radius: 100px;
@@ -539,4 +543,179 @@ footer .bottom-footer .copyright .social-links img {
   width: 36px;
   height: 36px;
   margin-top: 14px;
+}
+
+
+@media (max-width: 1024px) {
+
+  /* About-section */
+
+  .About-section .card {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+  .About-section .card .contents p {
+    width: 100%;
+  }
+
+  .About-section .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Process-section */
+  .Process-section .proces {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .Process-section .row-3 {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .Process-section .row-3 .colm1 {
+    gap: 10px;
+    align-items: left;
+  }
+
+  .Process-section .row-3 img {
+    width: 95%;
+    height: auto;
+  }
+
+  /* Stories */
+
+  .Stories .counter {
+    flex-direction: column;
+  }
+
+  .Stories .counter .line {
+    width: 100%;
+    height: 5px;
+  }
+
+  /* footer */
+
+  footer .bottom-footer .row3 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  footer .bottom-footer .copyright {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* header  */
+  header .header .nav .hamburger {
+    display: block;
+  }
+
+  header .header .nav .nav-list,
+  button {
+    display: none;
+  }
+
+  /* Head title */
+  .head-title img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .head-title p {
+    font-size: 10px;
+  }
+
+  .head-title h1 {
+    font-size: 30px;
+  }
+
+  /* herro */
+
+  .herro-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .herro-section h1 {
+    width: 100%;
+    font-size: 45px;
+  }
+
+  .herro-section p {
+    width: 100%;
+  }
+
+
+  /* Process-section */
+
+  .Process-section .proces {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+
+  .Process-section .row-3 .colm1 h1 {
+    font-size: 24px;
+  }
+
+
+  /* footer */
+  footer .News-section .row2 {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  /* Head title */
+  .head-title h1 {
+    font-size: 25px;
+  }
+
+  /* Process-section */
+
+  .Process-section .proces .card {
+    width: 90%;
+  }
+
+  /* herro */
+  .herro-section h1 {
+    width: fit-content;
+    font-size: 35px;
+  }
+
+  .herro-section p {
+    font-size: 12px;
+  }
+
+  /* footer */
+
+  footer .News-section .row2 .email {
+    width: 250px;
+    height: 45px;
+  }
+
+  footer .News-section .row2 .subscribe-btn {
+    width: 250px;
+    height: 45px;
+  }
+
+  footer .News-section .row2 .line-card {
+    display: none;
+  }
 }

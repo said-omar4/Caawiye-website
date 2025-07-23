@@ -54,6 +54,13 @@ header .header {
     margin: 0 auto;
 }
 
+header .header .nav .hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #6A37E3;
+}
+
 header .header img {
     width: 118px;
     height: 24px;
@@ -116,6 +123,8 @@ header .header .nav button:hover {
 /* herro section css */
 
 .herro-section {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     background-image: linear-gradient(to top, #BDA2FF, #FFFFFF);
     height: auto;
@@ -127,6 +136,7 @@ header .header .nav button:hover {
 }
 
 .herro-section h1 {
+    width: 600px;
     font-size: 55px;
     font-weight: 700px;
     color: #8856F8;
@@ -148,8 +158,10 @@ header .header .nav button:hover {
 }
 
 .herro-section p {
+    margin: 0 auto;
+    width: 600px;
     color: #8B59FA;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 
@@ -341,38 +353,20 @@ footer .News-section {
     padding-top: 60px;
 }
 
-footer .News-section .row1 img {
-    width: 65px;
-    height: 65px;
-    margin-bottom: 20px;
-}
-
-footer .News-section .row1 p {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0px;
-    color: #6A37E3;
-    margin-bottom: 10px;
-}
-
-footer .News-section .row1 h1 {
-    font-size: 38px;
-    font-weight: bold;
-    margin: 0px;
-    color: #1B0947;
-    line-height: 121%;
-}
-
 footer .News-section .row2 {
-    width: fit-content;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
     margin-top: 54px;
     position: relative;
 }
 
 footer .News-section .row2 .line-card {
-    width: 1005px;
+    width: 90%;
     height: 260px;
     border-radius: 0px 0px 20px 20px;
     border-left: 2px solid #DED3F9;
@@ -380,9 +374,6 @@ footer .News-section .row2 .line-card {
     border-bottom: 2px solid #DED3F9;
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
 }
 
 footer .News-section .row2 .email {
@@ -469,4 +460,172 @@ footer .bottom-footer .copyright .social-links img {
     width: 36px;
     height: 36px;
     margin-top: 14px;
+}
+
+
+@media (max-width: 1024px) {
+
+    /* members */
+
+    .Members .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stories */
+
+    .Stories .counter {
+        flex-direction: column;
+    }
+
+    .Stories .counter .line {
+        width: 100%;
+        height: 5px;
+    }
+
+    /* footer */
+
+    footer .bottom-footer .row3 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    footer .bottom-footer .copyright {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    /* header  */
+    header .header .nav .hamburger {
+        display: block;
+    }
+
+    header .header .nav .nav-list,
+    button {
+        display: none;
+    }
+
+    /* Head title */
+    .head-title img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .head-title p {
+        font-size: 10px;
+    }
+
+    .head-title h1 {
+        font-size: 30px;
+    }
+
+    /* herro */
+
+    .herro-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .herro-section h1 {
+        width: fit-content;
+        font-size: 45px;
+    }
+
+    .herro-section p {
+        width: fit-content;
+    }
+
+    /* members */
+
+    .Members .members-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr
+    }
+
+    .Members .members-grid .member-card.main {
+        width: 300px;
+        height: 304px;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .Members .members-grid .member-card.main img {
+        width: 300px;
+        height: 228px;
+    }
+
+    .Members .members-grid .member-card.main .bottom {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Members .members-grid .member-card.main .bottom .icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .Members .members-grid .member-card.main .bottom .icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .Members .members-grid .member-card.main .bottom h4 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .Members .members-grid .member-card.main .bottom p {
+        font-size: 15px;
+        margin-top: 9px;
+    }
+
+
+    /* footer */
+    footer .News-section .row2 {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    /* Head title */
+    .head-title h1 {
+        font-size: 25px;
+    }
+
+    /* herro */
+    .herro-section h1 {
+        width: fit-content;
+        font-size: 35px;
+    }
+
+    .herro-section p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    footer .News-section .row2 .email {
+        width: 250px;
+        height: 45px;
+    }
+
+    footer .News-section .row2 .subscribe-btn {
+        width: 250px;
+        height: 45px;
+    }
+
+    footer .News-section .row2 .line-card {
+        display: none;
+    }
 }

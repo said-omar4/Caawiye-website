@@ -53,6 +53,13 @@ header .header {
     margin: 0 auto;
 }
 
+header .header .nav .hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #6A37E3;
+}
+
 header .header img {
     width: 118px;
     height: 24px;
@@ -113,6 +120,8 @@ header .header .nav button:hover {
 /* herro section css */
 
 .herro-section {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     background-image: linear-gradient(to top, #BDA2FF, #FFFFFF);
     height: auto;
@@ -124,6 +133,7 @@ header .header .nav button:hover {
 }
 
 .herro-section h1 {
+    width: 600px;
     font-size: 55px;
     font-weight: 700px;
     color: #8856F8;
@@ -145,8 +155,9 @@ header .header .nav button:hover {
 }
 
 .herro-section p {
+    width: 600px;
     color: #8B59FA;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 
@@ -202,10 +213,12 @@ header .header .nav button:hover {
 
 .readed-section .left .Latest-blog .content h2 {
     color: #1B0947;
+    width: 400px;
 }
 
-.readed-section .left .Latest-blog .content p {
+.readed-section .left .Latest-blog .content .parag {
     color: #766B91;
+    width: 400px;
 }
 
 .readed-section .left .Latest-blog .content a {
@@ -243,7 +256,7 @@ p {
 
 /* The Top Readed blogs  */
 
-.readed-section .left {
+.readed-section .right {
     text-align: left;
     height: auto;
     width: auto;
@@ -291,6 +304,7 @@ p {
 }
 
 .readed-section .right .Top-read .card .card-content h3 {
+    width: 300px;
     font-size: 22px;
     font-weight: normal;
     line-height: 124%;
@@ -302,6 +316,7 @@ p {
     gap: 8px;
     align-items: center;
 }
+
 
 .readed-section .right .Top-read .card .card-content .date-person p {
     color: #493A6C;
@@ -411,10 +426,10 @@ footer .News-section {
     margin: 0 auto;
     background-image: linear-gradient(to top, rgba(189, 162, 255, 0.3), #ffffff);
     width: 85%;
-    height: auto;
+    height: fit-content;
     border-radius: 30px;
     padding-bottom: 20px;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 footer .News-section .row1 img {
@@ -545,4 +560,203 @@ footer .bottom-footer .copyright .social-links img {
     width: 36px;
     height: 36px;
     margin-top: 14px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    /* readed-section */
+    .readed-section {
+        flex-direction: column;
+        gap: 50px;
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .readed-section .left .Latest-blog img,
+    h2,
+    .parag {
+        width: 100%;
+        height: auto;
+    }
+
+    .readed-section .left .Latest-blog .content h2 {
+        width: 100%;
+    }
+
+    .readed-section .left .Latest-blog .content .parag {
+        width: 100%;
+    }
+
+    /* Blog */
+
+    .Blog .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* members */
+
+    .Members .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stories */
+
+    .Stories .counter {
+        flex-direction: column;
+    }
+
+    .Stories .counter .line {
+        width: 100%;
+        height: 5px;
+    }
+
+    /* footer */
+    footer .bottom-footer .row3 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    footer .bottom-footer .copyright {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* header  */
+    header .header .nav .hamburger {
+        display: block;
+    }
+
+    header .header .nav .nav-list,
+    button {
+        display: none;
+    }
+
+    /* Head title */
+    .head-title img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .head-title p {
+        font-size: 10px;
+    }
+
+    .head-title h1 {
+        font-size: 30px;
+    }
+
+    /* herro */
+    .herro-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .herro-section h1 {
+        width: fit-content;
+        font-size: 45px;
+    }
+
+    .herro-section p {
+        width: fit-content;
+    }
+
+    /* footer */
+    footer .News-section .row2 {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* readed-section */
+    .readed-section .left .Latest-blog h2 {
+        font-size: 18px;
+    }
+
+    .readed-section .left .Latest-blog p {
+        font-size: 14px;
+    }
+
+    .readed-section .right .Top-read .card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .readed-section .right .Top-read .card .card-content h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .readed-section .right .Top-read .card p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .readed-section .right .Top-read .card .card-content .date-person p {
+        font-size: 14px;
+    }
+
+    .readed-section .right .Top-read .card .card-content .date-person a {
+        font-size: 14px;
+    }
+
+    .readed-section .right .Top-read .card .card-content .date-person {
+        gap: 2px;
+        width: auto;
+    }
+
+    .readed-section .right .Top-read .card .card-content .circle {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* Blog grid */
+
+    .Blog .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Head title */
+    .head-title h1 {
+        font-size: 25px;
+    }
+
+    /* herro */
+    .herro-section h1 {
+        width: fit-content;
+        font-size: 35px;
+    }
+
+    .herro-section p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    footer .News-section .row2 .email {
+        width: 250px;
+        height: 45px;
+    }
+
+    footer .News-section .row2 .subscribe-btn {
+        width: 250px;
+        height: 45px;
+    }
+
+    footer .News-section .row2 .line-card {
+        display: none;
+    }
 }
