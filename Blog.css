@@ -358,7 +358,7 @@ p {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px 50px;
     margin: 0 auto;
 }
 

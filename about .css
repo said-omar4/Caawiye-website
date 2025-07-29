@@ -1,4 +1,4 @@
-wbody {
+body {
   background-color: white;
   text-align: center;
   height: 100%;
@@ -410,7 +410,6 @@ header .header .nav button:hover {
 }
 
 /* footer */
-
 /* subscribe to get blog posts news section */
 
 footer {
@@ -434,14 +433,13 @@ footer .News-section {
 footer .News-section .row2 {
   display: flex;
   gap: 20px;
-  align-item: center;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
   height: auto;
   text-align: center;
+  justify-content: center;
   margin-top: 54px;
   position: relative;
-  /* background-color: #1B0947; */
 }
 
 footer .News-section .row2 .line-card {
@@ -453,15 +451,11 @@ footer .News-section .row2 .line-card {
   border-bottom: 2px solid #DED3F9;
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
 }
 
 footer .News-section .row2 .email {
   width: 320px;
   height: 43px;
-  margin: 0 auto;
   background-color: #FFFFFF;
   border: 1px solid #C5B4F7;
   border-radius: 100px;

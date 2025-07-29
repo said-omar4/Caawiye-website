@@ -248,24 +248,56 @@ header .header .nav button:hover {
 /* Feutures section */
 
 .Feutures {
-    margin-top: 50px;
-    padding-bottom: 65px;
-    padding-top: 85px;
+    padding-left: 100px;
+    padding-right: 100px;
     width: 100%;
     height: auto;
     text-align: center;
+    margin: 100px auto;
 }
 
 .Feutures .row2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 180px;
+    text-align: center;
     width: fit-content;
+    margin: 50px auto;
+}
+
+
+/* .Feutures {
+    margin-top: 50px;
+     padding-bottom: 65px;
+    padding-top: 85px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 100px auto;
+} */
+
+/* .Feutures .row2 {
+    width: 100%;
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 30px 20px;
     text-align: center;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
+} */
+
+/* .Feutures .row2 {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px auto;
+    text-align: center;
     margin-top: 80px;
-}
+    margin: 0 auto;
+} */
 
 .Feutures .row2 .card {
     width: 200px;
@@ -447,9 +479,7 @@ header .header .nav button:hover {
     width: 100%;
     height: fit-content;
     margin: 50px auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 45px;
+    padding: 0 10px 45px;
     display: flex;
     flex-direction: column;
     gap: 66px;
@@ -661,7 +691,7 @@ header .header .nav button:hover {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 60px;
     margin: 0 auto;
 }
 
